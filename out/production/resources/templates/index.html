@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kalkulator</h1>
+<form
+        method="GET"
+        action="http://localhost:8080/v1/start/start"
+        data-task-add-form
+>
+    <fieldset>
+        <input type="radio" name="country" value="POLAND" checked="checked"/>Polska
+        <input type="radio" name="country" value="UK" />Wielka Brytania
+        <input type="radio" name="country" value="GERMANY" />Niemcy
+    </fieldset>
+    <fieldset>
+        <label >
+            dniówka
+        </label>
+        <input type="text" name="dailyPay" placeholder="podaj dniówkę " required minlength="1">
+    </fieldset>
+    <fieldset >
+        <button type="submit">wyślij</button>
+    </fieldset>
+</form>
+</body>
+</html>
